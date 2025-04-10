@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Track Your Order</h1>
+    </header>
+    <section class="tracking-section">
+        <label for="order-id">Enter Order ID:</label>
+        <input type="text" id="order-id">
+        <button onclick="trackOrder()">Track</button>
+        <p id="order-status"></p>
+    </section>
+    <script>
+        function trackOrder() {
+            let orderId = document.getElementById("order-id").value;
+            if (orderId === "12345") {
+                document.getElementById("order-status").innerText = "Your order is out for delivery!";
+            } else {
+                document.getElementById("order-status").innerText = "Invalid Order ID!";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="products">
+        <div class="product">
+            <img src="images/medicine1.jpg" alt="Medicine">
+            <h3>Paracetamol</h3>
+            <p>$5.00</p>
+            <button onclick="addToCart('Paracetamol', 5)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/medicine2.jpg" alt="Medicine">
+            <h3>Vitamin C</h3>
+            <p>$10.00</p>
+            <button onclick="addToCart('Vitamin C', 10)">Add to Cart</button>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
